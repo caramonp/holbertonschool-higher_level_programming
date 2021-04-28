@@ -13,6 +13,6 @@ if __name__ == "__main__":
     else:
         for i in range(count):
             if i == 0:
-                print("{} {}:".format(count - 1, "arguments:"))
+                print("{} {}:".format(count - 1, "arguments"))
             else:
                 print("{}: {}".format(i, argv[i]))
