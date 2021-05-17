@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>0x05. Python - Exceptions</title>
 </head>
 <body>
-
-<h1>Learning Objectives</h1>
-<h2>General<h2>
+<h1>0x05. Python - Exceptions</h1>
+<h2>Learning Objectives</h2>
+<h3>General<h3>
 <p>Why Python programming is awesome
 What’s the difference between errors and exceptions
 What are exceptions and how to use them
