@@ -41,10 +41,11 @@ class Square:
         size = self.__size
         position = self.__position
 
+        for p in range (position[1]):
+            print()
+
         for row in range(size):
-            print(" " * position[0] + "#" * size)
+            print((" " * position[0]) + ("#" * size))
 
         if size == 0:
-            print()
-        if position[1] > 0:
             print()
