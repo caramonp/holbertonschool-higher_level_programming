@@ -16,7 +16,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        if type(value) != int:
+        if type(value) != tuple or len(value) != 2:
             raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
