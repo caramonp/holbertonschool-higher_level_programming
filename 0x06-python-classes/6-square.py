@@ -41,7 +41,7 @@ class Square:
         size = self.__size
         position = self.__position
 
-        for p in range (position[1]):
+        for p in range(position[1]):
             print()
 
         for row in range(size):
