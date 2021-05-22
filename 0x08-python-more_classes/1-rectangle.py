@@ -5,7 +5,8 @@ class define a rectabgle.
 
 
 class Rectangle:
-    """Class my_rectangle define a empty value"""
+    """Class my_rectangle define a empty value
+    """
     def __init__(self, width=0, height=0):
         """ Instantiation
         """
@@ -14,6 +15,8 @@ class Rectangle:
 
     @property
     def width(self):
+        """ Getter for width
+        """
         return self.__width
 
     @width.setter
@@ -28,6 +31,8 @@ class Rectangle:
 
     @property
     def height(self):
+        """ Getter for height
+        """
         return self.__height
 
     @width.setter
