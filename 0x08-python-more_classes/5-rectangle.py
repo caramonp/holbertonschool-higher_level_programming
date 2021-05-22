@@ -82,6 +82,7 @@ class Rectangle:
 
         res = "Rectangle(" + w + ", " + h + ")"
         return res
+
     def __del__(self):
         """message for del
         """
