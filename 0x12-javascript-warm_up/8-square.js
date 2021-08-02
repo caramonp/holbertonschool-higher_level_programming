@@ -7,7 +7,7 @@ if (!isNaN(parseInt(process.argv[2]))) {
     for (let j = 0; j < argument; j++) {
       row += 'X';
     }
-    console.log(row + '');
+    console.log(row);
   }
 } else {
   console.log('Missing size');
