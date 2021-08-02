@@ -5,7 +5,7 @@ if (!isNaN(parseInt(process.argv[2]))) {
   for (let i = 0; i < argument; i++) {
     let row = '';
     for (let j = 0; j < argument; j++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row + '');
   }
