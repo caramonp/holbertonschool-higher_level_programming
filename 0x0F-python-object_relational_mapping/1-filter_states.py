@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     # execute SQL query using execute() method
     cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'\
-                    in ORDER BY id ASC")
+                    in ORDER BY id")
 
     # Fetch a single row using fetchone() method
     for row in cursor.fetchall():
