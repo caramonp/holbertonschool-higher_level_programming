@@ -2,6 +2,7 @@
 """[ lists all states with N from the database hbtn_0e_0_usa]
 """
 import sys
+from sys import argv
 import MySQLdb
 
 
@@ -14,12 +15,14 @@ if __name__ == "__main__":
     # Create a object with cursor method
     cursor = db.cursor()
 
-    # execute SQL query using execute() method
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    # execute SQL query
+    cursor.execute("SELECT * FROM states WHERE name = '{}'\
+                    ORDER BY id ASC".format(argv[4]))
 
     # Fetch a single row using fetchone() method
-    for row in cursor.fetchall():
-        print(row)
+    for state in cursor.fetchall():
+        if state[1] == argv[4]:
+            print(state)
 
     # disconnect from server
     cursor.close()
