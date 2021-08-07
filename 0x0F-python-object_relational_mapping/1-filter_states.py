@@ -20,7 +20,8 @@ if __name__ == "__main__":
 
     # Fetch a single row using fetchone() method
     for row in cursor.fetchall():
-        print(row)
+        if ("N" in row[1]):
+            print(row)
 
     # disconnect from server
     cursor.close()
