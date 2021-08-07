@@ -15,13 +15,11 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # execute SQL query using execute() method
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'\
-                    in ORDER BY id")
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%'")
 
     # Fetch a single row using fetchone() method
     for row in cursor.fetchall():
-        if ("N" in row[1]):
-            print(row)
+        print(row)
 
     # disconnect from server
     cursor.close()
