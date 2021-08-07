@@ -19,11 +19,11 @@ if __name__ == "__main__":
     cursor.execute("SELECT cities.name FROM cities\
                     JOIN states ON state_id=states.id\
                     WHERE states.name = %s\
-                    ORDER BY cities.id ASC" (argv[4],))
+                    ORDER BY cities.id ASC", (argv[4],))
 
     # Fetch a single row using fetchone() method
     cities_in_state = cursor.fetchall()
-    print(", ".join([row[0] for row in cities_in_state]))
+    print(", ".join(row[0] for row in cities_in_state))
 
     # disconnect from server
     cursor.close()
