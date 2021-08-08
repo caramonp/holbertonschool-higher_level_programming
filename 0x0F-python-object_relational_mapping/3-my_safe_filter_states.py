@@ -17,8 +17,8 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # execute SQL only recive %s
-    cursor.execute("SELECT * FROM states WHERE name= '%s'\
-    ORDER BY id ASC".format(argv[4], ))
+    cursor.execute("SELECT * FROM states WHERE name = '%s'\
+    ORDER BY id ASC".format(argv[4],))
 
     # Fetch a single row using fetchone() method
     for state in cursor.fetchall():
