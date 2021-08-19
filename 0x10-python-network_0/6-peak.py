@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+
+
 def find_peak(list_of_integers):
-    """Find a peak
+    """Find a peak in a list of numbers
     """
     lista_ordenada = sorted(list_of_integers)
     for i, number in enumerate(lista_ordenada):
