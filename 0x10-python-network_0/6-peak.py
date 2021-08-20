@@ -4,6 +4,8 @@
 def find_peak(list_of_integers):
     """Find a peak in a list of numbers
     """
-    lista_ordenada = sorted(list_of_integers)
-    for i, number in enumerate(lista_ordenada):
-        return (lista_ordenada[i-1])
+    for i in range(0, len(list_of_integers)):
+        if ((list_of_integers[i] >= list_of_integers[i - 1]) and
+                (list_of_integers[i] >= list_of_integers[i + 1])):
+            pick_number = list_of_integers[i]
+    return pick_number
